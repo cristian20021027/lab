@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Reacciones Químicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Reacciones Químicas</h1>
+        <div class="reactants-container">
+            <div class="reactant" draggable="true" id="reactant1">H₂</div>
+            <div class="reactant" draggable="true" id="reactant2">O₂</div>
+            <div class="reactant" draggable="true" id="reactant3">Na</div>
+            <div class="reactant" draggable="true" id="reactant4">Cl₂</div>
+            <div class="reactant" draggable="true" id="reactant5">CaCO₃</div>
+            <div class="reactant" draggable="true" id="reactant6">HCl</div>
+        </div>
+
+        <h2>Zona de Reacción</h2>
+        <div class="reaction-zone" id="reactionZone">
+            Arrastra aquí los reactivos
+        </div>
+
+        <h2>Contenedor de Partículas</h2>
+        <div class="particle-container" id="particleContainer">
+            <!-- Las partículas se generarán aquí -->
+        </div>
+
+        <button id="simulateBtn">Simular Reacción</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
